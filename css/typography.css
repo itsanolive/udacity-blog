@@ -28,7 +28,9 @@ h2 {
 h3 {
   font-variation-settings: 'wdth' 400, 'wght' 500;
 }
-
+p a {
+  text-decoration: underline;
+}
 a {
   color: var(--primary-bright);
   text-decoration: none;
