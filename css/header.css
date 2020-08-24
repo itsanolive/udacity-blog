@@ -1,0 +1,46 @@
+#header-main {
+ position: sticky;
+ z-index: 99;
+ top: 0;
+ background-color: var(--neutral-light);
+ width: 100%;
+ border-bottom: 1em solid var(--primary-bright);
+}
+navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2em;
+}
+#brand {
+  order: 2;
+}
+#brand h1 {
+  display: inline-block;
+}
+#archive, #subscribe {
+  width: 25%;
+}
+#archive {
+  order: 1;
+  font-variation-settings: 'wght' 600;
+  text-align: left;
+}
+#subscribe {
+  order: 3;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  #brand {
+    order: 1;
+    width: 100%;
+  }
+  #archive {
+    order: 2;
+  }
+  #subscribe {
+    order: 3;
+  }
+}

@@ -1,0 +1,134 @@
+/*====================================
+POST CARDS 
+====================================*/
+#recent-posts {
+  background-color: var(--secondary-bright);
+  align-items: center;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  margin: 3rem;
+}
+.card {
+  background-color: var(--neutral-light);
+  border-radius: 5px;
+  margin: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--primary-bright);
+}
+.card-image {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+.card .card-image img {
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-width: 100%;
+  max-width: 100%;
+}
+.card .card-info, .card .card-image-caption {
+  padding: 1em;
+}
+
+/*====================================
+SINGLE POST PAGE
+====================================*/
+.content {
+  display: flex;
+}
+.sidebar {
+  background-color: var(--secondary-bright);
+  padding: 1em;
+  position: relative;
+}
+.post-content {
+  padding: 1em;
+}
+.post-title {
+  color: var(--primary-bright);
+}
+
+.date {
+  font-family: 'Lora Italic', italic;
+  color: var(--neutral-mid);
+}
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+  .post-content {
+    order: 1;
+  }
+  .sidebar {
+    order: 2;
+  }
+}
+
+/*====================================
+AUTHORS
+====================================*/
+#authors {
+  background-color: #e23e65;
+  padding: 3em;
+}
+.authors-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.author {
+  display: flex;
+  margin: 1em;
+}
+.author .author-img {
+  flex-grow: 1;
+  display: block;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+}
+.author .author-img img {
+  width: auto;
+  max-height: 100%;
+}
+.author-info {
+  flex-grow: 1;
+  max-width: 50%;
+  padding-left: 2em;
+}
+.author-info h3 {
+  color: #eecd07;
+  border-bottom: 2px solid #eecd07;
+}
+.author-info p {
+  color: #fff;
+}
+#post .author {
+  flex-direction: column;
+  align-items: center;
+}
+#post .author-info {
+  max-width: 100%;
+  text-align: center;
+  padding-left: 0;
+}
+#post .author .author-info h3, #post .author p {
+  color: #15242b;
+  border: none;
+}
+
+@media (min-width: 600px) {
+  #post .author {
+    position: sticky;
+    top: 110px;
+  }
+}

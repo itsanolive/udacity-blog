@@ -1,0 +1,9 @@
+#footer-main {
+  background-color: #15242b;
+  color: var(--neutral-light);
+  justify-content: center;
+  padding-top: 2em;
+}
+.copyright {
+  font-family: 'Lora Serif';
+}
