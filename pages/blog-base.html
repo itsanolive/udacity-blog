@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Archive</title>
     <script src="https://kit.fontawesome.com/dee9f3fd0b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/main.css">
@@ -10,13 +11,14 @@
     <div id="blog">
 
       <header id="header-main">
-        <navbar>
+        <navbar class="header-nav">
           <div id="brand">
-            <!-- <img src="" alt="Bloggy McBlogface logo"> -->
             <a href="home.html">
-              <h1>Bloggy McBlogface</h1>
+              <h1 class="header-title">
+                <i class="fas fa-robot"></i>
+                Bloggy McBlogface
+              </h1>
             </a>
-
           </div>
           <div id="archive">
             <a href="blog-base.html">
@@ -24,7 +26,7 @@
             </a>
           </div>
           <div id="subscribe">
-            <a class="button button-secondary" href="#">
+            <a class="button button-secondary" href="#footer-main">
               SUBSCRIBE
             </a>
           </div>
@@ -105,6 +107,31 @@
           </div>
         </div>
       </section>
+
+      <footer id="footer-main">
+        <div class="subscribe">
+          <form action="#" class="form-subscribe">
+            <div class="label">
+              <label for="email">Enter your email for some sweet stuff!</label>
+            </div>
+            <div class="email">
+              <input id="email" type="email" placeholder="name@email.com">
+            </div>
+          </form>
+        </div>
+        <div class="social">
+          <a href="#">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="copyright"><i class="fas fa-copyright"></i> Olivia Beaty, 2020</div>
+      </footer>
 
     </div>
   </body>

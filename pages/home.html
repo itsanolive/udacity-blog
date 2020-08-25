@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloggy McBogface</title>
     <script src="https://kit.fontawesome.com/dee9f3fd0b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/main.css">
@@ -10,13 +11,14 @@
     <div id="home">
 
       <header id="header-main">
-        <navbar>
+        <navbar class="header-nav">
           <div id="brand">
-            <!-- <img src="" alt="Bloggy McBlogface logo"> -->
             <a href="home.html">
-              <h1>Bloggy McBlogface</h1>
+              <h1 class="header-title">
+                <i class="fas fa-robot"></i>
+                Bloggy McBlogface
+              </h1>
             </a>
-
           </div>
           <div id="archive">
             <a href="blog-base.html">
@@ -24,7 +26,7 @@
             </a>
           </div>
           <div id="subscribe">
-            <a class="button button-secondary" href="#">
+            <a class="button button-secondary" href="#footer-main">
               SUBSCRIBE
             </a>
           </div>
@@ -52,7 +54,7 @@
         <div class="card-container">
           <div class="card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1598078412970-a7e43d278518?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" alt="">
+              <img src="../img/blog-2.jpeg" alt="">
             </div>
             <div class="card-info">
               <article>
@@ -66,7 +68,7 @@
           </div>
           <div class="card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1568738372847-965c39a1c424?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+              <img src="../img/blog-3.jpeg" alt="">
             </div>
             <div class="card-info">
               <article>
@@ -80,7 +82,7 @@
           </div>
           <div class="card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1566410834486-857b30cff4ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&auto=format&fit=crop&w=1350&q=80" alt="">
+              <img src="../img/blog-4.jpeg" alt="">
             </div>
             <div class="card-info">
               <article>
@@ -94,7 +96,7 @@
           </div>
           <div class="card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1580508271385-40f3683cf893?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+              <img src="../img/blog-5.jpeg" alt="">
             </div>
             <div class="card-info">
               <article>
@@ -112,8 +114,10 @@
       <section id="authors">
         <div class="authors-container">
           <div class="author">
-            <div class="author-img">
-              <img src="https://images.unsplash.com/photo-1498387727476-b30055b2ef21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+            <div class="author-img-container">
+              <div class="author-img">
+                <img src="../img/author-1.jpeg" alt="">
+              </div>
             </div>
             <div class="author-info">
               <h3>Author Name</h3>
@@ -121,8 +125,10 @@
             </div>
           </div>
           <div class="author">
-            <div class="author-img">
-              <img src="https://images.unsplash.com/photo-1489641223343-c6b77f6b0bf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+            <div class="author-img-container">
+              <div class="author-img">
+                <img src="../img/author-2.jpeg" alt="">
+              </div>
             </div>
             <div class="author-info">
               <h3>Author Name</h3>
@@ -130,8 +136,10 @@
             </div>
           </div>
           <div class="author">
-            <div class="author-img">
-              <img src="https://images.unsplash.com/photo-1489980869433-d1f7c7ac0fcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+            <div class="author-img-container">
+              <div class="author-img">
+                <img src="../img/author-3.jpeg" alt="">
+              </div>
             </div>
             <div class="author-info">
               <h3>Author Name</h3>
@@ -139,8 +147,10 @@
             </div>
           </div>
           <div class="author">
-            <div class="author-img">
-              <img src="https://images.unsplash.com/photo-1541473211644-5cb06d3c68ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+            <div class="author-img-container">
+              <div class="author-img">
+                <img src="../img/author-4.jpeg" alt="">
+              </div>
             </div>
             <div class="author-info">
               <h3>Author Name</h3>
@@ -151,8 +161,27 @@
       </section>
 
       <footer id="footer-main">
-        <div class="subscribe"></div>
-        <div class="social"></div>
+        <div class="subscribe">
+          <form action="#" class="form-subscribe">
+            <div class="label">
+              <label for="email">Enter your email for some sweet stuff!</label>
+            </div>
+            <div class="email">
+              <input id="email" type="email" placeholder="name@email.com">
+            </div>
+          </form>
+        </div>
+        <div class="social">
+          <a href="#">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
         <div class="copyright"><i class="fas fa-copyright"></i> Olivia Beaty, 2020</div>
       </footer>
 

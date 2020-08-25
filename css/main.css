@@ -19,11 +19,11 @@ body {
   margin: 0;
 }
 
-#home {
+#home, #blog, #post {
   scroll-behavior: smooth;
   position: relative;
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
   /* grid-template-rows: repeat(5, 1fr); */
   /* grid-template-rows: 1fr repeat(3, minmax(calc(100vh - 99.88px)) 1fr) 1fr; */
   grid-template-areas:
@@ -33,28 +33,34 @@ body {
     "authors"
     "footer";
 }
+
 #header-main, #hero, #recent-posts, #authors, #footer-main {
   display: flex;
 }
+
 #hero, #recent-posts, #authors {
   min-height: calc(100vh - 99.88px);
 }
+
 #header-main {
   grid-area: header;
 }
+
 #hero {
   grid-area: hero;
 }
+
 #recent-posts {
   grid-area: posts;
 }
+
 #authors {
   grid-area: authors;
 }
+
 #footer-main {
   grid-area: footer;
 }
-
 
 .button {
   padding: 1em 2em;
@@ -64,18 +70,22 @@ body {
   display: inline-block;
   margin: .5em 0;
 }
+
 a.button-primary, button.button-primary {
   background-color: var(--primary-bright);
   color: var(--neutral-light);
 }
+
 a.button-primary:hover, button.button-primary:hover {
   background-color: var(--primary-dark);
   transition: .3s;
 }
+
 a.button-secondary, button.button-secondary {
   background-color: var(--secondary-bright);
   color: var(--neutral-dark);
 }
+
 a.button-secondary:hover, button.button-secondary:hover {
   background-color: var(--secondary-dark);
   color: var(--neutral-light);

@@ -1,7 +1,7 @@
 #hero {
   background:
     linear-gradient(rgba(0,0,0, 0), rgba(0,0,0, 0.5)),
-    url('https://images.unsplash.com/photo-1598130340413-5970fc015d43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1311&q=80')
+    url('../img/blog-1.jpeg')
     ;
   background-position: center;
   background-size: cover;

@@ -1,9 +1,44 @@
 #footer-main {
   background-color: #15242b;
   color: var(--neutral-light);
-  justify-content: center;
-  padding-top: 2em;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em;
 }
+
+.form-subscribe {
+  text-align: center;
+}
+
+.form-subscribe .email {
+  margin: 1em 0;
+  width: 100%;
+}
+
+.form-subscribe input {
+  display: block;
+  padding: 1em 6em;
+  color: var(--neutral-dark);
+  /* min-width: 100%; */
+  text-align: center;
+  border-radius: 5px;
+}
+
+.form-subscribe input['placeholder'] {
+  color: var(--neutral-mid);
+}
+
+.social {
+  display: flex;
+}
+
+.social a {
+  font-size: 2em;
+  margin: 1em;
+}
+
 .copyright {
-  font-family: 'Lora Serif';
+  margin-top: 3em;
+  font-family: 'Lora Italic', Italic;
+  color: var(--neutral-mid);
 }

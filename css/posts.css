@@ -1,16 +1,18 @@
 /*====================================
-POST CARDS 
+POST CARDS
 ====================================*/
 #recent-posts {
   background-color: var(--secondary-bright);
   align-items: center;
 }
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1rem;
   margin: 3rem;
 }
+
 .card {
   background-color: var(--neutral-light);
   border-radius: 5px;
@@ -18,12 +20,14 @@ POST CARDS
   overflow: hidden;
   border: 1px solid var(--primary-bright);
 }
+
 .card-image {
   position: relative;
   height: 200px;
   width: 100%;
   overflow: hidden;
 }
+
 .card .card-image img {
   display: block;
   position: relative;
@@ -34,6 +38,7 @@ POST CARDS
   min-width: 100%;
   max-width: 100%;
 }
+
 .card .card-info, .card .card-image-caption {
   padding: 1em;
 }
@@ -44,14 +49,17 @@ SINGLE POST PAGE
 .content {
   display: flex;
 }
+
 .sidebar {
   background-color: var(--secondary-bright);
   padding: 1em;
   position: relative;
 }
+
 .post-content {
   padding: 1em;
 }
+
 .post-title {
   color: var(--primary-bright);
 }
@@ -60,13 +68,16 @@ SINGLE POST PAGE
   font-family: 'Lora Italic', italic;
   color: var(--neutral-mid);
 }
+
 @media (max-width: 600px) {
   .content {
     flex-direction: column;
   }
+
   .post-content {
     order: 1;
   }
+
   .sidebar {
     order: 2;
   }
@@ -79,48 +90,82 @@ AUTHORS
   background-color: #e23e65;
   padding: 3em;
 }
+
 .authors-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   width: 100%;
 }
+
 .author {
   display: flex;
   margin: 1em;
 }
-.author .author-img {
-  flex-grow: 1;
+
+.author-img-container {
+  width: 50%;
+}
+
+.author-img {
+  position: relative;
   display: block;
   border-radius: 50%;
-  height: 300px;
-  width: 300px;
+  padding: 100% 0 0 0;
+  height: 0;
+  width: 100%;
   overflow: hidden;
 }
-.author .author-img img {
-  width: auto;
-  max-height: 100%;
+
+.author-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 .author-info {
   flex-grow: 1;
   max-width: 50%;
   padding-left: 2em;
 }
+
 .author-info h3 {
   color: #eecd07;
   border-bottom: 2px solid #eecd07;
 }
+
 .author-info p {
   color: #fff;
 }
+
+@media (max-width: 600px) {
+  .authors-container {
+    grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
+  }
+
+  .author {
+    flex-direction: column;
+  }
+  .author-img-container, .author-info {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+
 #post .author {
   flex-direction: column;
   align-items: center;
 }
+
 #post .author-info {
   max-width: 100%;
   text-align: center;
   padding-left: 0;
 }
+
 #post .author .author-info h3, #post .author p {
   color: #15242b;
   border: none;
