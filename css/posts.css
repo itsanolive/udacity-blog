@@ -43,6 +43,10 @@ POST CARDS
   padding: 1em;
 }
 
+.card .card-title {
+  text-decoration: underline;
+}
+
 /*====================================
 SINGLE POST PAGE
 ====================================*/
